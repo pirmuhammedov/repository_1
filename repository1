@@ -1,0 +1,22 @@
+namespace homework_2
+{
+    internal class Program
+    {
+        public static string MakeOutWorld(string firstVeriable, string secondVeriable)
+        {
+            var responce = firstVeriable.Insert(2,secondVeriable);
+            return responce;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("soz kiriting: ");
+            var firstWord = Console.ReadLine();
+            Console.WriteLine("soz kiriting: ");
+            var secondWord = Console.ReadLine();
+
+            var result = MakeOutWorld(firstWord, secondWord);
+
+            Console.WriteLine(result);
+        }
+    }
+}
